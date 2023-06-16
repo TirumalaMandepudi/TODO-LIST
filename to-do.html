@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>TO-DO LIST</title>
+        <style>
+            .outer{
+                width: 100%;
+                min-height: 100vh;
+                background: linear-gradient(150deg,#e45120,#240be8);
+                padding: 10px;
+            }
+            .to-doapp{
+                width: 100%;
+                max-width: 540px;
+               background: #fff;
+               margin: 100px auto 20;
+               padding: 40px 30px 70px;
+               border-radius: 10px;
+            }
+            .to-doapp h1{
+                color: #0a0404;
+                align-items: center;
+                
+                
+                margin-bottom: 30px;
+            }
+            .to-doentry{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: #dadde2;
+                padding-left: 30px;
+                border-radius: 150px;
+                margin-bottom: 20px;
+            }
+            input{
+                flex: 1;
+                bottom: none;
+                outline: none;
+                background: transparent;
+                font-weight: 10px;
+            }
+            button{
+                border: none;
+                outline: none;
+                padding: 16px 50px;
+                background: #ff5945;
+                color: #170707;
+                font-size: 19px;
+                cursor: pointer;
+                border-radius: 40px;
+            }
+             ul li{
+                text-align: left;
+                background-color: ##dadde2;
+                border-radius: 15px;
+                margin-bottom: 20px;
+                list-style:none;
+                font-size: 15px;
+                padding: 10px 10px 10px 10px;
+                user-select: none;
+                cursor: pointer;
+                position: relative;
+            }
+            ul li::before{
+                content: '';
+                position: absolute;
+                height: 28px;
+                width: 28px;
+                border-radius: 50%;
+                background-size: cover;
+                background-position: center;
+                top: 12px;
+                left: 8px;
+
+             }
+            ul li.checked{
+                color: #a33b0a;
+                text-decoration: line-through;
+                    
+            }
+            ul li.checked::before{ 
+                color: #c8430a; 
+                text-decoration: overline; 
+            }
+            ul li span{
+                position: absolute;
+                right: 0;
+                top: 5px;
+                width: 40px;
+                height:40px;
+                font-size: 22px;
+                color: #555;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+
+            }
+            ul li span:hover{
+                background: #dadde2;
+            }
+
+
+        </style>
+    </head>
+    <body align="center">
+        <div class="outer">
+            <div class="to-doapp">
+                <h1>TO-DO LIST</h1>
+                <div class="to-doentry">
+                    <input type="text" id="inputbox" placeholder="ENTER YOUR TO-DO LIST">
+                    <button onclick="addTask()">ADD</button>
+                </div>
+                <ul id="istcontainl">
+                    <!--<li class="checked">TASK 1</li>
+                       <li>TASK 2</li>
+                        <li>TASK 3</li>-->
+
+                </ul>
+            </div>
+        </div>
+     <script src="C:\Users\tirum\OneDrive\Desktop\intenship\int\to-do.js"></script>
+    </body>
+</html>
